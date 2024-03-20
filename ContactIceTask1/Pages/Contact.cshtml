@@ -1,0 +1,34 @@
+﻿@page
+@model ContactIceTask1.Pages.ContactModel
+@{
+}
+
+<h3>Get in Touch</h3>
+
+@if (Model.hasData)
+{
+	<p>Thank you @Model.firstName @Model.lastName</p>
+	<p>We have recieved the following message from you:</p>
+	<p>@Model.message</p>
+}
+
+<div class = "container">
+	<form>
+		<label for=" fname">First Name</label><br />
+		<input type="text" id="fname" name="firstname" <br />
+
+		<label for=" lname">Last Name</label><br />
+		<input type="text" id="lname" name="lastname" <br />
+
+		<label for=" message">Message</label><br />
+		<input type="message" id="message" name="message" style="height:200px" <br />
+
+	
+		<input type = "submit" value="Submit" />
+
+
+	</form>
+
+
+
+</div>
